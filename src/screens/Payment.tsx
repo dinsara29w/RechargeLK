@@ -7,7 +7,7 @@ export default function PaymentScreen({ onPay }: { onPay: () => void }) {
     <motion.div 
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
-      className="space-y-6 pb-12"
+      className="space-y-6 pb-64 md:pb-12"
     >
       <div className="grid md:grid-cols-3 gap-12 items-start">
         {/* Left Column: Payment Methods */}
@@ -112,14 +112,16 @@ export default function PaymentScreen({ onPay }: { onPay: () => void }) {
               </div>
             </div>
 
-            <div className="mt-10">
-              <button 
-                onClick={onPay}
-                className="w-full h-16 signature-gradient text-white font-bold rounded-2xl flex items-center justify-center gap-3 shadow-xl shadow-primary/20 hover:opacity-90 active:scale-95 transition-all"
-              >
-                <span className="font-headline text-xl">Pay Now</span>
-                <ArrowRight size={24} />
-              </button>
+            <div className="md:mt-10">
+              <div className="md:relative fixed bottom-28 md:bottom-0 left-0 w-full px-6 pt-20 pb-4 z-40 max-w-md md:max-w-none left-1/2 -translate-x-1/2 md:translate-x-0 md:left-0 bg-gradient-to-t from-background via-background/95 to-transparent">
+                <button 
+                  onClick={onPay}
+                  className="w-full h-16 signature-gradient text-white font-bold rounded-2xl flex items-center justify-center gap-3 shadow-xl shadow-primary/20 hover:opacity-90 active:scale-95 transition-all md:max-w-md md:mx-auto"
+                >
+                  <span className="font-headline text-xl">Pay Now</span>
+                  <ArrowRight size={24} />
+                </button>
+              </div>
             </div>
           </section>
 

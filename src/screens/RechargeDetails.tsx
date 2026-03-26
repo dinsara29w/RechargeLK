@@ -8,7 +8,7 @@ export default function RechargeDetailsScreen({ operator, onProceed }: { operato
     <motion.div 
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
-      className="max-w-4xl mx-auto space-y-8 pb-12"
+      className="max-w-4xl mx-auto space-y-8 pb-64 md:pb-12"
     >
       {/* Operator Context */}
       <section className="flex items-center gap-4 md:gap-6 bg-surface-container-low p-4 md:p-6 rounded-2xl">
@@ -109,7 +109,7 @@ export default function RechargeDetailsScreen({ operator, onProceed }: { operato
 
       {/* Proceed Button */}
       <div className="md:pt-8">
-        <div className="md:relative fixed bottom-24 md:bottom-0 left-0 w-full px-6 z-40 max-w-md md:max-w-none left-1/2 -translate-x-1/2 md:translate-x-0 md:left-0">
+        <div className="md:relative fixed bottom-28 md:bottom-0 left-0 w-full px-6 pt-20 pb-4 z-40 max-w-md md:max-w-none left-1/2 -translate-x-1/2 md:translate-x-0 md:left-0 bg-gradient-to-t from-background via-background/95 to-transparent">
           <button 
             onClick={onProceed}
             className="w-full bg-secondary text-white py-5 rounded-xl font-bold text-lg shadow-[0_12px_24px_-8px_rgba(160,58,15,0.4)] flex items-center justify-center gap-2 hover:opacity-90 active:scale-95 transition-all md:max-w-md md:mx-auto"

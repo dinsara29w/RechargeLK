@@ -8,7 +8,7 @@ export default function HomeScreen({ onSelectOperator, onNavigate }: { onSelectO
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="space-y-8"
+      className="space-y-8 pb-64 md:pb-12"
     >
       {/* Hero Section */}
       <section className="relative grid md:grid-cols-2 gap-8 md:gap-12 items-center">

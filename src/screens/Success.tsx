@@ -7,7 +7,7 @@ export default function SuccessScreen({ onReset }: { onReset: () => void }) {
     <motion.div 
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
-      className="flex flex-col items-center pb-12"
+      className="flex flex-col items-center pb-48 md:pb-12"
     >
       {/* Success Hero */}
       <section className="w-full flex flex-col items-center text-center mb-6 md:mb-10 pt-4 md:pt-8">

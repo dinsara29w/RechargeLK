@@ -14,7 +14,7 @@ export default function HistoryScreen() {
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="max-w-4xl mx-auto space-y-6 pb-12"
+      className="max-w-4xl mx-auto space-y-6 pb-48 md:pb-12"
     >
       <div className="flex justify-between items-end px-1">
         <div>

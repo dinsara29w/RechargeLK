@@ -15,7 +15,7 @@ export default function AccountScreen() {
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="max-w-4xl mx-auto space-y-8 pb-12"
+      className="max-w-4xl mx-auto space-y-8 pb-48 md:pb-12"
     >
       {/* Profile Header */}
       <section className="flex flex-col md:flex-row items-center text-center md:text-left gap-8 bg-surface-container-low p-8 rounded-[2rem]">

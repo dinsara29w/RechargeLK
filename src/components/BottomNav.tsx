@@ -10,7 +10,7 @@ export default function BottomNav({ currentScreen, onNavigate }: { currentScreen
   ];
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-white/80 backdrop-blur-xl rounded-t-[2rem] shadow-[0_-4px_20px_0_rgba(24,47,80,0.06)] max-w-md left-1/2 -translate-x-1/2 border-t border-white/20">
+    <nav className="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-8 pt-8 bg-white/90 backdrop-blur-xl rounded-t-[2.5rem] shadow-[0_-8px_30px_rgba(24,47,80,0.08)] max-w-md left-1/2 -translate-x-1/2 border-t border-white/20">
       {tabs.map((tab) => {
         const isActive = currentScreen === tab.id;
         const Icon = tab.icon;
