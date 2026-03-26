@@ -89,24 +89,23 @@ export default function HomeScreen({ onSelectOperator, onNavigate }: { onSelectO
             <div 
               key={offer.id}
               className="snap-center shrink-0 w-[280px] md:w-[380px] h-[160px] md:h-[220px] rounded-[2rem] md:rounded-[2.5rem] p-6 md:p-10 relative overflow-hidden flex flex-col justify-between text-white shadow-xl ring-1 ring-white/10"
+              style={{ background: offer.color }}
             >
-              <div 
-                className="absolute inset-0 opacity-100 -z-10" 
-                style={{ background: offer.color }}
-              ></div>
-              <div 
-                className="absolute inset-0 bg-cover bg-center -z-20 opacity-20" 
-                style={{ backgroundImage: `url(${offer.image})` }}
-              ></div>
+              <img 
+                src={offer.image} 
+                alt=""
+                className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none" 
+                referrerPolicy="no-referrer"
+              />
               
-              <div className="space-y-3">
+              <div className="relative z-10 space-y-3">
                 <span className="bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest inline-block">
                   {offer.tag}
                 </span>
                 <h4 className="text-3xl font-extrabold tracking-tight">{offer.title}</h4>
               </div>
 
-              <div className="flex justify-between items-end">
+              <div className="relative z-10 flex justify-between items-end">
                 <p className="text-sm font-medium opacity-90 max-w-[120px] leading-tight">
                   {offer.subtitle}
                 </p>

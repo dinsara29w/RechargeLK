@@ -46,7 +46,7 @@ export const OFFERS: Offer[] = [
     subtitle: 'Using Visa Card for any recharge',
     tag: 'CASHBACK',
     image: 'https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=300',
-    color: 'linear-gradient(135deg, #ff6b00 0%, #a03a0f 100%)',
+    color: 'linear-gradient(135deg, #2196F3 0%, #1976D2 100%)',
   },
   {
     id: '3',
@@ -54,7 +54,7 @@ export const OFFERS: Offer[] = [
     subtitle: 'Unlimited Data 12AM - 5AM',
     tag: 'LIMITED TIME',
     image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=300',
-    color: 'linear-gradient(135deg, #00c853 0%, #006b0a 100%)',
+    color: 'linear-gradient(135deg, #03A9F4 0%, #0288D1 100%)',
   },
 ];
 

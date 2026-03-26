@@ -34,7 +34,7 @@ export default function TopBar({ showBack, onBack, currentScreen, onNavigate }: 
             ) : (
               <Bolt className="text-primary text-2xl" />
             )}
-            <h1 className="text-xl font-bold tracking-tighter text-primary font-headline">RechargeLK</h1>
+            <h1 className="text-xl font-bold tracking-tighter text-primary font-headline">RechargeLK by Shaz</h1>
           </div>
 
           {/* Desktop Navigation */}
